@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../client/style1.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Elite King - Mentorias</title>
+</head>
+<body>
+    
+    <nav>
+        <a href="" class="logo">Elite King</a>
+        <div class="links">
+            <ul class="nav-links">
+            <li class="link"><a href="../client/index.html">Inicio</a></li>
+            <li id="link1" class="link"><a href="#">Contratar</a></li>
+            <li id="link2" class="link"><a href="#">Beneficios</a></li>
+            <li id="link3" class="link"><a href="#">Sobre Nosotros</a></li>
+        </ul>
+        </div>
+        <div class="nav-logo">
+            <a href="#">
+                <img src="/fotos/logo.jpg">
+            </a>
+        </div>
+    </nav>
+    <main>
+        <div class="content">
+            <div class="buttons">
+                <button data-video="/videos/video1.mp4" class="active">Clase 1: Creación de Shopify y Dominio</button>
+                <button data-video="/videos/video12.mp4">Clase 2: Configuración de Shopify y Plantilla</button>
+                <button data-video="/videos/video13.mp4">Clase 3: Proveedores y Envios. Procesar pedidos</button>
+                <button data-video="/videos/video14.mp4">Clase 4: Introducción a Facebook ADS</button>
+                <button data-video="/videos/video15.mp4">Clase 5: Campaña publicitaria</button>
+                <button class="video_extra"><a href="https://drive.google.com/drive/folders/1we6n_8FbU0pb7FrwTjW6IwNtyfjDSo4m" target="_blank">Videos Extras</a></button>
+            </div>
+            <div class="video-section">
+                <div class="video-container">
+                    <div class="video-title" id="video-title">Clase 1: Creación de Shopify y Dominio</div>
+                    <video id="video-player" controls>
+                        <source src="video1.mp4" type="video/mp4">
+                        Tu navegador no soporta el elemento de video.
+                    </video>
+                </div>
+            </div>
+    </main>
+    <footer class="footer">
+        <p>Terminos y condiciones</p>
+        <p>Politicas de privacidad</p>
+        <p>© 2025 Elite King</p>
+    </footer>
+    <button class="contact-fab">
+        <a href="https://api.whatsapp.com/message/ZVKKFSBIBRFNC1?autoload=1&app_absent=0" target="_blank"><i class="bx bxl-whatsapp"></i></a>
+    </button>
+    <script>
+        const buttons = document.querySelectorAll('.buttons button');
+        const videoPlayer = document.getElementById('video-player');
+        const videoTitle = document.getElementById('video-title'); // Elemento para el título
+    
+        buttons.forEach(button => {
+            button.addEventListener('click', () => {
+                // Si el botón tiene la clase 'video_extra', redirige y no ejecuta más código
+                if (button.classList.contains('video_extra')) {
+                    const link = button.querySelector('a');
+                    if (link) {
+                        window.open(link.href, link.target); // Redirige al enlace
+                    }
+                    return; // Detener ejecución del evento
+                }
+    
+                // Actualizar la fuente del video
+                const videoSource = button.getAttribute('data-video');
+                videoPlayer.querySelector('source').src = videoSource;
+                videoPlayer.load();
+    
+                // Cambiar la clase activa
+                buttons.forEach(btn => btn.classList.remove('active'));
+                button.classList.add('active');
+    
+                // Actualizar el título del video con el texto del botón
+                videoTitle.textContent = button.textContent;
+            });
+        });
+    </script>
+</body>
+</html>
