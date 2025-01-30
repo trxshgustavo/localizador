@@ -425,10 +425,6 @@ footer p{
         height: 100px;
     }
 
-    .nav-links {
-        display: none; /* Oculta el menú en pantallas muy pequeñas */
-    }
-
     .hero {
         padding: 0 20px;
     }
