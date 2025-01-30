@@ -348,7 +348,7 @@ footer p{
         padding: 0 40px;
     }
 
-    nav a.logo {
+    nav a .logo {
         display: none; /* Oculta el logo para pantallas pequeñas */
     }
 
@@ -382,7 +382,7 @@ footer p{
         gap: 10px;
     }
 
-    nav a.logo {
+    nav a .logo {
         display: none; /* Oculta el logo para pantallas pequeñas */
     }
 
@@ -394,10 +394,16 @@ footer p{
         width: 100%;
     }
 
-    .nav-links a{
-        padding-bottom: 20px;
+    .link a::after{
+        content: "";
+        position: absolute;
+        height: 2px;
+        width: 0;
+        bottom: 0;
+        left: 0;
+        background-color: transparent;
+        transition:  all 0.3s ease;
     }
-
 
     .slider-box {
         width: 100%;
@@ -442,7 +448,7 @@ footer p{
         padding: 10px 0;
     }
 
-    nav a.logo {
+    nav a .logo {
         display: none; /* Oculta el logo para pantallas pequeñas */
     }
 
@@ -450,10 +456,7 @@ footer p{
         flex-direction: column;
         align-items: center;
         gap: 5px;
-    }
-
-    .nav-links a{
-        padding-bottom: 20px;
+        padding-top: 10px;
     }
 
     .hero {
