@@ -425,6 +425,11 @@ footer p{
         height: 100px;
     }
 
+    nav a.logo {
+        display: none; /* Oculta el logo */
+    }
+
+
     .hero {
         padding: 0 20px;
     }
