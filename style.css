@@ -388,12 +388,16 @@ footer p{
 
     .nav-links {
         display: flex;
-        margin-bottom: 20px;
         flex-direction: column;
         gap: 10px;
         align-items: center;
         width: 100%;
     }
+
+    .nav-links a{
+        padding-bottom: 20px;
+    }
+
 
     .slider-box {
         width: 100%;
@@ -446,7 +450,10 @@ footer p{
         flex-direction: column;
         align-items: center;
         gap: 5px;
-        margin-bottom: 20px;
+    }
+
+    .nav-links a{
+        padding-bottom: 20px;
     }
 
     .hero {
