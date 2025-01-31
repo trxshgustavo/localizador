@@ -47,6 +47,10 @@ nav .links a:not(:last-child){
     gap: 3rem;
 }
 
+.buttons i{
+    color: #000
+}
+
 .link a{
     font-size: 17px;
     position: relative;
