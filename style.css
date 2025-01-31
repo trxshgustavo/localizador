@@ -348,8 +348,13 @@ footer p{
         padding: 0 40px;
     }
 
-    nav a .logo {
-        display: none; /* Oculta el logo para pantallas pequeñas */
+    nav a.logo, 
+    .nav-logo {
+        display: none;  /* Oculta el logo y el texto "Elite King" */
+    }
+
+    h2{
+        margin-top: 10px;
     }
 
     .hero {
@@ -375,11 +380,10 @@ footer p{
 
 @media screen and (max-width: 768px) {
     nav {
-        padding: 0 20px;
-        display: flex;
         flex-direction: column;
         align-items: center;
-        gap: 10px;
+        height: auto;
+        padding: 20px;
     }
 
     nav a .logo {
@@ -392,6 +396,7 @@ footer p{
         gap: 10px;
         align-items: center;
         width: 100%;
+        
     }
 
     .link a::after{
@@ -412,6 +417,7 @@ footer p{
 
     .about .items {
         flex-direction: column;
+        align-items: center;
     }
 
     .about .items .item {
@@ -439,6 +445,10 @@ footer p{
         right: 1rem;
         font-size: 1.5rem;
         padding: 0.75rem;
+    }
+
+    .footer{
+        padding: 20px 40px 20px 40px;
     }
 }
 
