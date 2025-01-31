@@ -455,7 +455,7 @@ footer p{
         margin: auto;
         margin-right: 0;
         padding-top: 20px;
-        padding-right: 40px;
+        padding-right: 60px;
     }
 
     .nav-logo{
@@ -470,7 +470,7 @@ footer p{
     }
     
     .nav-logo a img{
-        width: 80px;
+        width: 60px;
     }
 
     .hero {
