@@ -9,7 +9,7 @@
 
 a{
     text-decoration: none;
-    color: #000;
+    color: #fff;
 }
 
 img{
@@ -161,11 +161,12 @@ video {
     }
 
     .buttons {
-        width: 100%;
-        align-items: center;
+        margin-top: 0px;
+        margin-bottom: 20px;
     }
 
     .buttons button {
+        font-size: 13px;
         width: 100%;
         max-width: 300px;
     }
@@ -176,6 +177,14 @@ video {
 
     video {
         max-width: 100%;
+    }
+
+    footer{
+        flex-direction: column;
+    }
+
+    .footer{
+        padding: 20px 40px 20px 40px;
     }
 }
 
