@@ -47,10 +47,6 @@ nav .links a:not(:last-child){
     gap: 3rem;
 }
 
-.buttons i{
-    color: #000
-}
-
 .link a{
     font-size: 17px;
     position: relative;
@@ -166,6 +162,7 @@ nav .links a:not(:last-child){
 
 .hero .left-section .top .buttons button i{
     font-size: 26px;
+    color: #000
 }
 
 .hero .left-section .top .buttons button.doc,
