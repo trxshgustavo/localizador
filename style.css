@@ -441,8 +441,6 @@ footer p{
         height: auto;
         justify-content: space-between;
         padding: 20px;
-        padding-top: 0;
-        padding-right: 0;
     }
 
 
@@ -454,8 +452,7 @@ footer p{
     .links{
         margin: auto;
         margin-right: 0;
-        padding-top: 20px;
-        padding-right: 60px;
+        padding-right: 40px;
     }
 
     .nav-logo{
